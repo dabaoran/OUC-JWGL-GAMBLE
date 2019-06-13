@@ -377,9 +377,9 @@ def print_data_table(data_list, table_type):
 
 
 def gen_config_file():
-    logging.info('Please input your id and password for the first time.')
+    logging.info('Please input your student number and password for the first time.')
     while True:
-        username = input('Input id: ').strip()
+        username = input('Input student number: ').strip()
         password = input('Input password: ').strip()
         if username.isdigit() and password != '':
             break
@@ -442,7 +442,6 @@ def main():
     global xn, xnxq
     try:
         if sys.argv[1] == 'grades':
-            print('q')
             print_data_table(data.get_grades(sys.argv[2]), 'grades')
         elif sys.argv[1] == 'gamble_course':
             xn = sys.argv[3]
