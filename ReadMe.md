@@ -11,7 +11,7 @@
     1. Linux
         > sudo apt-get install tesseract-ocr
     2. Win
-        下载tesseract-ocr，并配置pytesseract.pytesseract.tesseract_cmd为安装路径
+        下载tesseract-ocr，并配置pytesseract.pytesseract.tesseract_cmd为安装路径，默认pytesseract.pytesseract.tesseract_cmd = "C:\\Program Files (x86)\\Tesseract-OCR\\tesseract.exe"
 ### 配置文件 ###
 config.json
 学号和密码的md5值，首次使用需要输入
